@@ -1,3 +1,12 @@
+//Desarrolladores
+// Gabriela Moreno Quintana
+// Robberto Maurer
+// Ricardo de Leon
+// J.G. Marin
+
+// Compilacion:
+// Ejecucion:
+
 package main.app.entity;
 
 import javafx.util.Pair;
