@@ -15,8 +15,8 @@ public class Stock {
         // ○ Teclados - $500 c/u - En almacén hay 200
         // ○ Mouse - $400 c/u - En almacén hay 200
         // ○ Enfriadores - $1500 c/u - En almacén hay 200
-        Product laptop = new Product("Laptop", "computadora portatil","Inspiron 15", "DELL", 6000);
-        Product monitor = new Product("Monitor","32\"","SM32","Samsung",2500);
+        Product laptop = new Product("Laptop", "computadora","Inspi", "DELL", 6000);
+        Product monitor = new Product("Monitor","SHUDTv 32\"","SM32","Samsung",2500);
         Product teclado = new Product("teclado","Inalambrico","s3500", "Dell",500);
         Product mouse = new Product("mouse","Inalambrico", "FN705","Dell",400);
         Product enfriador = new Product("enfriador", "USB","F2","Borago",1500);

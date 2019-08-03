@@ -9,10 +9,11 @@ import java.util.List;
 
 public class Order {
    public Client client;
-   public List<Pair<Integer, Product>> list;
+    // Pairs Syntax: stockId, quantity
+   public List<Pair<Integer, Integer>> list;
    public Date dueDate;
 
-    public Order(Client client, List<Pair <Integer, Product>> list, String dueDate){
+    public Order(Client client, List<Pair <Integer, Integer>> list, String dueDate){
         this.client = client;
         this.list = list;
         try {
