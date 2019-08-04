@@ -21,4 +21,13 @@ public class StockElement {
         this.unitsInStock = unitsInStock;
         this.requestedUnits = requestedUnits;
     }
+
+    @Override
+    public String toString() {
+        String res = "";
+
+       res += this.product.name+"\t" +this.product.brand + "\t" + this.product.model + "\t" + this.unitsInStock + "\t\t\t\t\t" + this.requestedUnits;
+
+        return res;
+    }
 }

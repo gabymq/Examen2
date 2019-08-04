@@ -31,6 +31,6 @@ public class Init {
         PointOfSsale pos = new PointOfSsale(customers, stock, orders);
 
         pos.printTickets();
-        // System.out.println("Hola");
+        pos.printStockReport();
     }
 }

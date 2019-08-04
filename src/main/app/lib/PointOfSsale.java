@@ -70,10 +70,13 @@ public class PointOfSsale {
                     // set calendar date to order dueDate
                     calendar.setTime(order.dueDate);
                     // add two weeks
-                    calendar.add(Calendar.WEEK_OF_YEAR, 2);
+                    calendar.add(Calendar.DAY_OF_YEAR, 2);
                     // add two weeks to delivery date
                     order.dueDate = calendar.getTime();
                 }
+
+                //sustract from stock
+                stockElement.unitsInStock -= quantity;
                 
                 // add subTotal
                 subtotal += stockElement.product.price * quantity;
@@ -121,6 +124,15 @@ public class PointOfSsale {
     public void printTickets() {
         for (int i = 0; i < this.quotes.size(); i++) {
             System.out.println(this.quotes.get(i));
+        }
+    }
+
+    public void printStockReport() {
+        System.out.println("####################################################\nReporte de almacen");
+        System.out.println( "Nombre\tMarca\tModelo\tUnidades en almacen\tUnidades Requeridas");
+        for(int i = 0; i < this.stock.size(); i++ ) {
+            System.out.println(this.stock.get(i));
+
         }
     }
 }

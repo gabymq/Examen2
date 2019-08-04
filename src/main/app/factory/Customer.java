@@ -17,7 +17,7 @@ import java.util.Hashtable;
 
 public class Customer {
     public static Hashtable<Integer, Client>populate(){
-        Hashtable<Integer, Client> res = new Hashtable<Integer, Client>();
+        Hashtable<Integer, Client> res = new Hashtable<>();
         Client client1 = new Client("Gerardo Ponce");
         Client client2 = new Client("Andrea Jimenez");
         Client client3 = new Client("Berenice Urtado");
